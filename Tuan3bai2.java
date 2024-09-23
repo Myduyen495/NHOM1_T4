@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class bai2 {
+public class Tuan3bai2 {
 	static Scanner sc;
 	static double diemTB;
 	

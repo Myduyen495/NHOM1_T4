@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class bai3 {
+public class Tuan3bai3 {
 	static double a;
 	static double b;
 	static double c;
@@ -27,19 +27,21 @@ public class bai3 {
 	}
 	
 	static void Giai() {
-		if (a==0) 
-            System.out.println("Phương trình không phải bậc 2.");
-        else if (delta > 0) {
+		if (a==0)
+			if (b==0)
+				if (c==0) System.out.println("phương trình có vô số nghiệm");
+				else System.out.println("phương trình vô nghiệm");
+			else { x = -c/b;
+				System.out.println("Phương trình có nghiệm : x = " + x); }
+		else if (delta > 0) {
                 x1 = (-b + Math.sqrt(delta)) / (2 * a);
                 x2 = (-b - Math.sqrt(delta)) / (2 * a);
                 System.out.println("Phương trình có 2 nghiệm phân biệt:");
                 System.out.println("x1 = " + x1);
                 System.out.println("x2 = " + x2); }
-        else if (delta == 0) {
-                x = -b / (2 * a);
-                System.out.println("Phương trình có nghiệm kép: x = " + x); } 
-        else {
-                System.out.println("Phương trình vô nghiệm.");}
+			else if (delta == 0) { x = -b / (2 * a);
+					System.out.println("Phương trình có nghiệm kép: x = " + x); } 
+				else System.out.println("Phương trình vô nghiệm.");
 	}
 	
 	public static void main(String[] args) {

@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class bai5 {
+public class Tuan3bai5 {
 	static double a;
 	static double b;
 	static double c;
